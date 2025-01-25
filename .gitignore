@@ -70,4 +70,19 @@ crashlytics-build.properties
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+/[Aa]ssets/[Ss]treamingAssets/aa/*/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+#Corgi Asset Pack
+Assets/CorgiEngine/Demos/
+Assets/CorgiEngine/Common/Editor/
+Assets/CorgiEngine/Demos/Editor/
+Assets/CorgiEngine/ThirdParty/
+Assets/CorgiEngine/ThirdParty/MoreMountains
+Assets/CorgiEngine/Common/Fonts/
+Assets/CorgiEngine/Common/Materials
+Assets/CorgiEngine/Common/Resources
+Assets/CorgiEngine/Common/Scripts/InventoryEngineItems
+Assets/CorgiEngine/Common/Scripts/Achievements
+Assets/CorgiEngine/Common/Scripts/Agents/AI/Legacy
+Assets/CorgiEngine/Common/Prefabs/Music
+Assets/Scripts.meta
