@@ -424,8 +424,29 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 174455402009872328, guid: 7d5d1ac594855754093f8863e00d0115,
         type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2986818500251847579, guid: 7481c8b855b05044180e1e97f6664ece,
+        type: 3}
+    - target: {fileID: 174455402009872328, guid: 7d5d1ac594855754093f8863e00d0115,
+        type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 174455402009872328, guid: 7d5d1ac594855754093f8863e00d0115,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 174455402009872328, guid: 7d5d1ac594855754093f8863e00d0115,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 174455402009872328, guid: 7d5d1ac594855754093f8863e00d0115,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 882126258113389117, guid: 7d5d1ac594855754093f8863e00d0115,
         type: 3}
@@ -538,7 +559,7 @@ PrefabInstance:
 
 
         Game
-        Designer/2D Artist - Greg Jones
+        Designer/2D Artist/UI Designer - Greg Jones
 
 
 '

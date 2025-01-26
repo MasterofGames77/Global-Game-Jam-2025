@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using MoreMountains.Tools;
 using MoreMountains.Feedbacks;
+using UnityEngine.SceneManagement;
 
 namespace MoreMountains.CorgiEngine
 {	
@@ -112,13 +113,23 @@ namespace MoreMountains.CorgiEngine
 		/// </summary>
 		public virtual void GoToNextLevel()
 		{
+			if (string.IsNullOrEmpty(LevelName))
+			{
+				Debug.LogError("FinishLevel: LevelName is not set! Cannot load level.");
+				return;
+			}
+
+			Debug.Log($"FinishLevel: Reloading level {LevelName}");
+
+			// Check if LevelManager exists, otherwise use SceneManager
 			if (LevelManager.HasInstance)
 			{
-				LevelManager.Instance.GotoLevel(LevelName, (DelayBeforeTransition == 0f));
+				LevelManager.Instance.GotoLevel(LevelName, true);
 			}
 			else
 			{
-				MMSceneLoadingManager.LoadScene(LevelName);
+				Debug.LogWarning("FinishLevel: LevelManager instance missing. Falling back to SceneManager.");
+				MMSceneLoadingManager.LoadScene(LevelName, MMSceneLoadingManager.LoadingScreenSceneName);
 			}
 		}
 	}
