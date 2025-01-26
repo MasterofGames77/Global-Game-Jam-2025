@@ -1,29 +1,50 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using MoreMountains.Tools;
 
 namespace MoreMountains.CorgiEngine
 {
-	/// <summary>
-	/// A simple component meant to be added to the pause button
-	/// </summary>
-	public class PauseButton : CorgiMonoBehaviour
-	{
-		/// Puts the game on pause
-		public virtual void PauseButtonAction()
-		{
-			StartCoroutine(PauseButtonCo());
-		}	
+    public class PauseButton : CorgiMonoBehaviour
+    {
+        public void ResumeGame()
+        {
+            StartCoroutine(ResumeGameCo());
+        }
 
-		/// <summary>
-		/// A coroutine used to trigger the pause event
-		/// </summary>
-		/// <returns></returns>
-		protected virtual IEnumerator PauseButtonCo()
-		{
-			yield return null;
-			// we trigger a Pause event for the GameManager and other classes that could be listening to it too
-			CorgiEngineEvent.Trigger(CorgiEngineEventTypes.TogglePause);
-		}
-	}
+        public void RestartLevel()
+        {
+            StartCoroutine(RestartLevelCo());
+        }
+        public virtual void ReturnToMainMenu()
+        {
+            StartCoroutine(ReturnToMainMenuCo());
+        }
+
+        protected IEnumerator ResumeGameCo()
+        {
+            yield return null;
+            CorgiEngineEvent.Trigger(CorgiEngineEventTypes.TogglePause);
+        }
+
+        protected IEnumerator RestartLevelCo()
+        {
+            yield return null;
+            MMSceneLoadingManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        protected virtual IEnumerator ReturnToMainMenuCo()
+        {
+            yield return null;
+
+            // Set the scene to load and trigger the loading process
+            MMSceneLoadingManager.LoadScene("MainMenu", MMSceneLoadingManager.LoadingScreenSceneName);
+        }
+
+        private void CleanupReferences()
+        {
+            // Nullify references or clear listeners if needed
+            // Example: Remove listeners or nullify static variables
+        }
+    }
 }

@@ -735,6 +735,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2bc2393159369841bf00452b4875630, type: 3}
+--- !u!4 &198266117 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 439596, guid: 1e2ef77e02a786343b8a471871afc2bf,
+    type: 3}
+  m_PrefabInstance: {fileID: 944523797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &200544118
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +802,7 @@ Transform:
   - {fileID: 1939146238}
   - {fileID: 36444670}
   - {fileID: 1254740427}
+  - {fileID: 198266117}
   m_Father: {fileID: 1172016335}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &205798807
@@ -2832,7 +2839,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 200544119}
     m_Modifications:
     - target: {fileID: 112176, guid: 1e2ef77e02a786343b8a471871afc2bf, type: 3}
       propertyPath: m_Name
@@ -2848,11 +2855,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 439596, guid: 1e2ef77e02a786343b8a471871afc2bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 70.12
+      value: 118.824455
       objectReference: {fileID: 0}
     - target: {fileID: 439596, guid: 1e2ef77e02a786343b8a471871afc2bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.82
+      value: 23.37
       objectReference: {fileID: 0}
     - target: {fileID: 439596, guid: 1e2ef77e02a786343b8a471871afc2bf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2864,11 +2871,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 439596, guid: 1e2ef77e02a786343b8a471871afc2bf, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 439596, guid: 1e2ef77e02a786343b8a471871afc2bf, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 439596, guid: 1e2ef77e02a786343b8a471871afc2bf, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3026,6 +3033,18 @@ Transform:
   - {fileID: 1832886148}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1207588048 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11430546, guid: ace2d4bf56f98df4196ff81845a465d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1883759624}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193bbf164db32874d8aff4329f973a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1218064182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442250, guid: f2bc2393159369841bf00452b4875630,
@@ -3954,6 +3973,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11458622, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1207588048}
+    - target: {fileID: 11458622, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 11458622, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoreMountains.CorgiEngine.PauseButton, MoreMountains.CorgiEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 22425704, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 153.90002
@@ -3961,6 +3992,40 @@ PrefabInstance:
     - target: {fileID: 22425704, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -71.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296503092917984, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: m_Name
+      value: MainMenuButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082823121530130, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1207588048}
+    - target: {fileID: 114082823121530130, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082823121530130, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoreMountains.CorgiEngine.PauseButton, MoreMountains.CorgiEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114089187229735952, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: m_Text
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349799186519086, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: m_Text
+      value: Return to Main Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853163660337640, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: m_Text
+      value: Restart Level
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4388,4 +4453,3 @@ SceneRoots:
   - {fileID: 591247607}
   - {fileID: 357004768}
   - {fileID: 1883759624}
-  - {fileID: 944523797}
