@@ -972,12 +972,12 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 99fad2bc-8a41-4f05-b3e2-4222ce5016c1
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: Global Game Jam 2025
   organizationId: legendarygamemaker16
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
