@@ -3,6 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+  tags: []
   tags:
   - LevelBounds
   - Music
@@ -23,6 +24,26 @@ TagManager:
   - OneWayPlatforms
   - Projectiles
   - Enemies
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - Ladders
   - PlayerProjectiles
