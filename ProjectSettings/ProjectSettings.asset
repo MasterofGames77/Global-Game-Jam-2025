@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 2cdde4e6757205241a8cacbc7ac38846
+  productGUID: e14656668ef25324cbf9b814ee27825d
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -972,12 +972,12 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 2
+  activeInputHandler: 0
   windowsGamepadBackendHint: 0
   cloudProjectId: 99fad2bc-8a41-4f05-b3e2-4222ce5016c1
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Global Game Jam 2025
+  projectName: 
   organizationId: legendarygamemaker16
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

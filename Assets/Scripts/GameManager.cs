@@ -7,7 +7,7 @@ public enum GameState
     Menu
 }
 
-public class GameManager : MonoBehaviour
+/*public class GameManager : MonoBehaviour
 {
     [Header("State of Game")]
     public GameState gameState;
@@ -31,4 +31,4 @@ public class GameManager : MonoBehaviour
             Cursor.visible = true;
         }
     }
-}
+}*/

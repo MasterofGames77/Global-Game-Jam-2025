@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Falling_plat_0: 5146544764764387671
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
